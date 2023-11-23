@@ -1,0 +1,77 @@
+button {
+  border: 0;
+}
+.ham-btn {
+  z-index: 11;
+  position: absolute;
+  display: grid;
+  width: 2.8rem;
+  background-color: transparent;
+  transform: translateY(-50%);
+  top: 50%;
+  gap: 0.6rem;
+  right: 1.2rem;
+}
+.ham-btn[data-open="true"] .ham-btn-line {
+  position: absolute;
+  height: 2px;
+  background-color: var(--white);
+  transition: 0.5s;
+  width: 100%;
+}
+
+/* HAM OPENED */
+
+.ham-btn[data-open="true"] .ham-btn-line:nth-child(1) {
+  position: absolute;
+  transform: rotate(45deg);
+}
+.ham-btn[data-open="true"] .ham-btn-line:nth-child(2) {
+  animation: middle-line-open 0.5s forwards;
+}
+@keyframes middle-line-open {
+  from {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(1rem);
+    opacity: 0;
+  }
+}
+.ham-btn[data-open="true"] .ham-btn-line:nth-child(3) {
+  position: absolute;
+  transform: rotate(135deg);
+}
+
+/* HAM CLOSED */
+
+.ham-btn[data-open="false"] .ham-btn-line {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--white);
+  /* margin: auto; */
+  transition: 0.5s;
+}
+.ham-btn[data-open="false"] .ham-btn-line:nth-child(1) {
+  transform: rotate(0deg);
+  top: -10px;
+}
+.ham-btn[data-open="false"] .ham-btn-line:nth-child(2) {
+  animation: middle-line-close 0.5s forwards;
+}
+@keyframes middle-line {
+  from {
+    transform: translateX(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+.ham-btn[data-open="false"] .ham-btn-line:nth-child(3) {
+  transform: rotate(0deg);
+  top: 10px;
+}

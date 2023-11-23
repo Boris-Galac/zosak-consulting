@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--white);
+}
+h2 {
+  position: relative;
+  font-size: clamp(1.5rem, 7vw, 3rem);
+  font-weight: 600;
+  margin-left: 4rem;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 15%;
+  left: -3.2rem;
+  transform: translateY(-50%);
+  top: 50%;
+  background-color: blueviolet;
+}
+.h2-heading--white {
+  color: var(--white);
+}
+.h2-heading--dark {
+  color: var(--h2-heading);
+}
+.h3-heading {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+.paragraph {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 300;
+}
+.paragraph--white {
+  color: var(--white);
+}
+/* hero */
+
+.hero__main-heading,
+.hero__subheadline {
+  color: var(--white);
+}
+.hero__main-heading {
+  font-size: clamp(2rem, 7vw, 5rem);
+  margin-bottom: 0.5rem;
+}
+.yellow-heading {
+  color: hsl(60, 100%, 50%);
+}
+.hero__subheadline {
+  font-weight: 500;
+}
+
+/* offer */
+
+.offer__first-text {
+  color: var(--h2-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.offer__list-item-paragraph {
+  color: var(--offer-list-item-paragraph);
+  font-weight: 400;
+}

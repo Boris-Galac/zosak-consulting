@@ -1,0 +1,9 @@
+.offer__list {
+  display: grid;
+  gap: 3rem;
+}
+.offer__list li {
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+}
