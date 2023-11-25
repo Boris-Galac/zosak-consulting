@@ -29,10 +29,14 @@
               <a href="#offer" class="nav__link">Što nudim</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Benefiti usluge</a>
+              <a href="#benefiti" class="nav__link">Benefiti usluge</a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">O meni</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Kontakt</a></li>
+            <li class="nav__item">
+              <a href="#o-nama" class="nav__link">O meni</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Kontakt</a>
+            </li>
           </div>
         </ul>
       </nav>
@@ -155,7 +159,7 @@
       </section>
       <!------------------>
       <!-- BENEFITI -->
-      <section class="benefiti">
+      <section class="benefiti" id="benefiti">
         <div class="container">
           <div class="benefiti__wrapper">
             <h2 class="h2-heading--white mb-40">Benefiti moje usluge</h2>
@@ -208,15 +212,15 @@
             </h2>
             <div class="project-counter__inner-wrapper">
               <div class="counter-box">
-                <span class="count">438</span>
+                <span class="count" data-num="438">0</span>
                 <span class="count__caption">Zadovojnih klijenata</span>
               </div>
               <div class="counter-box">
-                <span class="count">17</span>
+                <span class="count" data-num="17">0</span>
                 <span class="count__caption">Uspješnih velikih projekata</span>
               </div>
               <div class="counter-box">
-                <span class="count">25</span>
+                <span class="count" data-num="25">0</span>
                 <span class="count__caption"
                   >Godina iskustva na istom polju</span
                 >
@@ -225,6 +229,237 @@
           </div>
         </div>
       </section>
+      <!--------------------->
+      <!-- ABOUT SECTION -->
+      <section class="about" id="o-nama">
+        <div class="container">
+          <div class="about__wrapper">
+            <h2 class="h2-heading h2-heading--white h2-heading--about">
+              O nama
+            </h2>
+            <div class="about__inner-wrapper">
+              <div class="about__article-wrapper">
+                <article class="about__article">
+                  <img
+                    src="/assets/images/o-nama-logo.svg"
+                    aria-hidden="true"
+                    class="about__logo"
+                  />
+                  <p class="paragraph">
+                    Ing. <strong>Darko Zošak</strong> je osnivač tvrtke ZOŠAK
+                    CONSULTING Iza Ing. Darka Zošaka stoji više od
+                    <strong>30 godina internacionalnog iskustva</strong> zapadne
+                    europe u području snižavanja troškova čišćenja svih vrsta
+                    objekata uključujući najzahtjevnije zdravstvene ustanove u
+                    Švicarskoj, Njemačkoj i Hrvatskoj.
+                  </p>
+                </article>
+                <article class="about__article">
+                  <p class="paragraph">
+                    Naša tvrtka, ZOŠAK CONSULTING d.o.o., sa više od 25 godina
+                    iskustva, stručna je u
+                    <strong
+                      >optimizaciji čišćenja za tvrtke i zdravstvene
+                      ustanove</strong
+                    >
+                    u Švicarskoj, Njemačkoj i Hrvatskoj.
+                    <strong>Smanjujemo troškove čišćenja za 50%</strong>, bilo
+                    da je riječ o <strong>vlastitoj službi</strong> ili
+                    <strong>outsourcingu</strong>. To postižemo primjenom
+                    učinkovitih tehnika čišćenja i optimizacijom poslovanja,
+                    smanjujući potrebni broj spremačica prema europskim
+                    standardima. Na primjer, njemačke bolnice slične veličine
+                    imaju znatno manje osoblja za čišćenje zbog bržih i
+                    modernijih metoda.
+                  </p>
+                </article>
+                <article class="about__article">
+                  <p class="paragraph">
+                    Osim toga, <strong>nudimo pomoć u optimizacij</strong> i
+                    troškova, uključujući opciju plaćanja dijela uštede,
+                    prilagođavajući se vašem načinu čišćenja. Ako koristite
+                    outsourcing,
+                    <strong>analiziramo i nadziremo uslugu</strong> kako biste
+                    bili sigurni da ispunjava dogovoreno. Također pružamo
+                    <strong>različite metode čišćenja</strong>, sukladno
+                    međunarodnim standardima,
+                    <strong>osiguravajući transparentnost i usporedivost</strong
+                    >.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------------------->
+      <!-----BANNER SECTION---->
+      <section class="banner">
+        <img
+          src="/assets/images/about-shape-overlay.svg"
+          class="banner__img"
+          aria-hidden="true"
+        />
+        <div class="banner__wrapper">
+          <div class="container">
+            <span class="banner__heading"
+              >Smanjujemo troškove čišćenja za 50%</span
+            >
+          </div>
+        </div>
+      </section>
+      <!--------------------->
+      <!-----BANNER SECTION---->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact__wrapper">
+            <h2 class="h2-heading h2-heading--dark mb-40">
+              Kontaktirajte nas za suradnju
+            </h2>
+            <div class="contact__inner-wrapper">
+              <p class="paragraph mb-64">
+                Slobodno se javite za bilo kakav vid suradnje u ovoj oblasti.
+                Javit ćemo Vam se u što kraćem mogućem roku. Hvala!
+              </p>
+              <div class="contact__body-content">
+                <form class="contact__form">
+                  <div class="contact__form-row">
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      name="name"
+                      id="name"
+                    />
+                    <label for="name">Ime i prezime</label>
+                  </div>
+                  <div class="contact__form-row">
+                    <input
+                      class="contact__form-input"
+                      type="email"
+                      name="email"
+                      id="email"
+                    />
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="contact__form-row">
+                    <textarea name="text"></textarea>
+                    <label for="text">Vaša poruka</label>
+                  </div>
+                  <button class="contact__form-submit-btn mb-40" type="submit">
+                    Pošalji upit
+                  </button>
+                </form>
+                <div class="contact__contact-socials">
+                  <div class="contact__info mb-32">
+                    <h3 class="h3-heading mb-32">Info</h3>
+                    <div class="contact__info-row">
+                      <a href="#"
+                        ><img
+                          src="/assets/icons/mail-icon.svg"
+                          aria-hidden="true"
+                        />zosak@zosak.hr</a
+                      >
+                    </div>
+                    <div class="contact__info-row">
+                      <a href="#"
+                        ><img
+                          src="/assets/icons/phone-icon.svg"
+                          aria-hidden="true"
+                        />091/907-0000</a
+                      >
+                    </div>
+                    <div class="contact__info-row">
+                      <a href="#"
+                        ><img
+                          src="/assets/icons/building-icon.svg"
+                          aria-hidden="true"
+                        />Draganići 14, 10000 Zagreb</a
+                      >
+                    </div>
+                    <div class="contact__info-row">
+                      <a href="#"
+                        ><img
+                          src="/assets/icons/time-icon.svg"
+                          aria-hidden="true"
+                        />09:00 - 17:00</a
+                      >
+                    </div>
+                  </div>
+                  <div class="contact__socials">
+                    <a href="#"
+                      ><img
+                        src="/assets/icons/gmail-dark-icon.svg"
+                        aria-hidden="true"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="/assets/icons/instagram-dark-icon.svg"
+                        aria-hidden="true"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="/assets/icons/fb-dark-icon.svg"
+                        aria-hidden="true"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------------------->
+      <!-----FOOTER---->
+      <footer class="footer pb-4">
+        <div class="container">
+          <div class="footer__wrapper">
+            <img
+              src="/assets/images/logo-zosak-horizontal.svg"
+              alt="footer logo zosak"
+              class="footer__logo mb-64"
+            />
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Naslovna</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Što nudim</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Benefiti usluge</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">O meni</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__separator"></div>
+          <div class="footer__socials">
+            <a href="#"
+              ><img src="/assets/icons/gmail-white-icon.svg" aria-hidden="true"
+            /></a>
+            <a href="#"
+              ><img
+                src="/assets/icons/instagram-white-icon.svg"
+                aria-hidden="true"
+            /></a>
+            <a href="#"
+              ><img src="/assets/icons/fb-white-icon.svg" aria-hidden="true"
+            /></a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="copyright__paragraph">
+            Copyright © 2023 - All Rights Reserved. Website kreirao i uredio:
+            GALAC-DESIGN
+          </p>
+        </div>
+      </footer>
       <!--------------------->
     </main>
   </body>

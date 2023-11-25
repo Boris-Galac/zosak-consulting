@@ -73,3 +73,32 @@ h2::before {
   color: var(--offer-list-item-paragraph);
   font-weight: 400;
 }
+
+/* about */
+
+.about .paragraph {
+  font-weight: 400;
+  line-height: 180%;
+}
+.h2-heading--about {
+  margin-bottom: 8rem;
+}
+
+/* contact */
+
+.contact .paragraph {
+  font-weight: 400;
+}
+.contact .h3-heading {
+  position: relative;
+  font-size: 2rem;
+}
+.contact .h3-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: var(--white);
+  bottom: -0.5rem;
+  height: 2px;
+  width: 1.5rem;
+}

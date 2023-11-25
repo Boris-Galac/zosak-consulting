@@ -5,12 +5,13 @@ button {
   z-index: 11;
   position: absolute;
   display: grid;
-  width: 2.8rem;
   background-color: transparent;
   transform: translateY(-50%);
   top: 50%;
   gap: 0.6rem;
   right: 1.2rem;
+  height: 2rem;
+  width: 2.8rem;
 }
 .ham-btn[data-open="true"] .ham-btn-line {
   position: absolute;
@@ -18,12 +19,13 @@ button {
   background-color: var(--white);
   transition: 0.5s;
   width: 100%;
+  transform: translateY(-50%);
+  top: 50%;
 }
 
 /* HAM OPENED */
 
 .ham-btn[data-open="true"] .ham-btn-line:nth-child(1) {
-  position: absolute;
   transform: rotate(45deg);
 }
 .ham-btn[data-open="true"] .ham-btn-line:nth-child(2) {
@@ -40,7 +42,6 @@ button {
   }
 }
 .ham-btn[data-open="true"] .ham-btn-line:nth-child(3) {
-  position: absolute;
   transform: rotate(135deg);
 }
 
@@ -51,17 +52,18 @@ button {
   height: 2px;
   width: 100%;
   background-color: var(--white);
-  /* margin: auto; */
   transition: 0.5s;
 }
 .ham-btn[data-open="false"] .ham-btn-line:nth-child(1) {
   transform: rotate(0deg);
-  top: -10px;
+  top: 5px;
 }
 .ham-btn[data-open="false"] .ham-btn-line:nth-child(2) {
   animation: middle-line-close 0.5s forwards;
+  transform: translateY(-50%);
+  top: 50%;
 }
-@keyframes middle-line {
+@keyframes middle-line-close {
   from {
     transform: translateX(1rem);
     opacity: 0;
@@ -73,5 +75,18 @@ button {
 }
 .ham-btn[data-open="false"] .ham-btn-line:nth-child(3) {
   transform: rotate(0deg);
-  top: 10px;
+  bottom: 3px;
+}
+
+.contact__form-submit-btn {
+  transition: 0.3s;
+  padding-block: 0.8rem;
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  font: inherit;
+  cursor: pointer;
+}
+.contact__form-submit-btn:hover {
+  background-color: #2e2e2e;
 }

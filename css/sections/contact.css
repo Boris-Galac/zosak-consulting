@@ -1,0 +1,32 @@
+.contact {
+}
+.contact__wrapper {
+}
+.contact__inner-wrapper {
+}
+.contact__body-content {
+}
+.contact__contact-socials {
+  background-color: #d1efff;
+  padding-bottom: 1.5rem;
+}
+.contact__info {
+  background-color: var(--h2-heading);
+  padding: 1.5rem;
+  width: 80%;
+  margin-inline: auto;
+}
+.contact__info-row {
+  display: flex;
+  align-items: center;
+}
+.contact__info-row a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block: 1rem;
+}
+.contact__socials {
+  display: flex;
+  justify-content: space-around;
+}

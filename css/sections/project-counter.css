@@ -11,8 +11,6 @@
   z-index: -1;
   background-attachment: fixed;
 }
-.project-counter__wrapper {
-}
 .project-counter__inner-wrapper {
   display: flex;
   justify-content: center;

@@ -35,3 +35,57 @@ window.addEventListener("scroll", (e) => {
     document.querySelector(".nav__logo").setAttribute("data-visible", "false");
   }
 });
+
+// PROJECT COUNTER
+
+// let valueDisplays = document.querySelectorAll(".count");
+// let interval = 5000;
+
+// valueDisplays.forEach((valueDisplay) => {
+//   let startValue = 0;
+//   let endValue = Number(valueDisplay.getAttribute("data-num"));
+//   let duration = Math.floor(interval / endValue);
+//   let counter = setInterval(() => {
+//     startValue += 1;
+//     valueDisplay.textContent = startValue;
+//     if (startValue == endValue) {
+//       clearInterval(counter);
+//     }
+//   }, duration);
+// });
+
+function startCounterAnimation() {
+  let valueDisplays = document.querySelectorAll(".count");
+  let interval = 5000;
+
+  valueDisplays.forEach((valueDisplay) => {
+    let startValue = 0;
+    let endValue = Number(valueDisplay.getAttribute("data-num"));
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(() => {
+      startValue += 1;
+      valueDisplay.textContent = startValue;
+      if (startValue == endValue) {
+        clearInterval(counter);
+      }
+    }, duration);
+  });
+}
+
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5,
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      startCounterAnimation();
+      observer.unobserve(entry.target);
+    }
+  });
+}, options);
+
+const projectCounterSection = document.querySelector(".project-counter");
+observer.observe(projectCounterSection);
