@@ -1,14 +1,9 @@
-.contact {
-}
-.contact__wrapper {
-}
-.contact__inner-wrapper {
-}
-.contact__body-content {
-}
 .contact__contact-socials {
   background-color: #d1efff;
   padding-bottom: 1.5rem;
+}
+.contact__form {
+  width: min(100%, 500px);
 }
 .contact__info {
   background-color: var(--h2-heading);
@@ -29,4 +24,32 @@
 .contact__socials {
   display: flex;
   justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .contact__body-content {
+    display: flex;
+    margin-right: auto;
+    gap: 20rem;
+  }
+}
+@media (min-width: 960px) {
+  .contact__contact-socials {
+    position: relative;
+    width: min(100%, 300px);
+    padding-inline: 2rem;
+    display: grid;
+  }
+  .contact__info {
+    position: absolute;
+    width: max-content;
+    left: -69px;
+    transform: translateY(-50%);
+    top: 45%;
+  }
+  .contact__socials {
+    align-self: flex-end;
+  }
+  .contact__socials a {
+    align-self: center;
+  }
 }

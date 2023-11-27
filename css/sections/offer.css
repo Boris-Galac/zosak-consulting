@@ -7,3 +7,33 @@
   align-items: start;
   gap: 0.5rem;
 }
+.offer__text-content {
+  max-width: 450px;
+}
+.offer__text-content h2 {
+  display: none;
+}
+.offer__img {
+  max-width: min(100%, 400px);
+}
+.offer__inner-wrapper {
+  justify-content: space-around;
+}
+@media (min-width: 960px) {
+  .offer__inner-wrapper {
+    display: flex;
+    /* gap: 3rem; */
+  }
+  .offer__text-content {
+    order: 2;
+  }
+  .offer__img {
+    order: 1;
+  }
+  .offer__text-content h2 {
+    display: grid;
+  }
+  .offer__wrapper > h2 {
+    display: none;
+  }
+}

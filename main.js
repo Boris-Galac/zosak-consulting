@@ -98,3 +98,23 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 const projectCounterSection = document.querySelector(".project-counter");
 observer.observe(projectCounterSection);
+
+// ANIMATIONS
+
+const observerElements = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-right-left");
+    }
+    //  else{
+    //    entry.target.classList.remove("show");
+    // }
+  });
+});
+
+const hiddenRight = document.querySelectorAll(".right");
+hiddenRight.forEach((el) => observerElements.observe(el));
+const hiddenLeft = document.querySelectorAll(".left");
+hiddenLeft.forEach((el) => observerElements.observe(el));
+const oapcity = document.querySelectorAll(".opacity");
+oapcity.forEach((el) => observerElements.observe(el));

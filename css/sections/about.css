@@ -9,14 +9,6 @@
   background: url("/assets/images/o-nama-img.jpg") no-repeat center center/cover;
   z-index: -1;
 }
-.about__wrapper {
-}
-.about__inner-wrapper {
-}
-.about__article-wrapper {
-  display: grid;
-  gap: 2.5rem;
-}
 .about__article {
   background-color: var(--white);
   padding: 2rem;

@@ -5,6 +5,7 @@
 @import "abstracts/sizes.css";
 /* utilities */
 @import "utilities/utility-classes.css";
+@import "utilities/animations.css";
 /* sections */
 @import "sections/hero.css";
 @import "sections/offer.css";
@@ -12,6 +13,7 @@
 @import "sections/project-counter.css";
 @import "sections/about.css";
 @import "sections/banner.css";
+@import "sections/business-card.css";
 @import "sections/contact.css";
 /* components */
 @import "components/nav.css";

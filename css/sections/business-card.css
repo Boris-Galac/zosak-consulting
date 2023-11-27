@@ -1,0 +1,24 @@
+.business-card {
+  background: linear-gradient(140deg, rgba(0, 0, 0, 0.694), rgb(255, 255, 255));
+}
+.business-card__inner-wrapper {
+  display: grid;
+  place-items: center;
+  perspective: 1000px;
+}
+.business-card .card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+.business-card .card::after {
+  content: "";
+  position: absolute;
+  height: 1rem;
+  width: 15rem;
+  background: radial-gradient(rgba(0, 0, 0, 0.5) 10%, transparent 100%);
+  filter: blur(5px);
+  transform: translateX(-50%);
+  left: 50%;
+  border-radius: 100%;
+}

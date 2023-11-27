@@ -11,17 +11,17 @@
   background-attachment: fixed;
   z-index: -1;
 }
-.benefiti__wrapper {
-}
 .benefiti__inner-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
 }
+.benefiti__inner-wrapper > * {
+  flex: 1;
+}
 .benefiti__article-col {
   display: flex;
   gap: 1rem;
   align-items: start;
-}
-.benefiti__article {
+  min-width: 300px;
 }

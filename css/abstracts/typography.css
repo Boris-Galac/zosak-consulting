@@ -31,6 +31,11 @@ h2::before {
 .h2-heading--dark {
   color: var(--h2-heading);
 }
+@media (min-width: 1024px) {
+  h2 {
+    margin-bottom: 6rem !important;
+  }
+}
 .h3-heading {
   font-weight: 600;
   margin-bottom: 1rem;
@@ -81,13 +86,20 @@ h2::before {
   line-height: 180%;
 }
 .h2-heading--about {
-  margin-bottom: 8rem;
+  margin-bottom: 11rem !important;
+}
+.about__article-wrapper {
+  display: grid;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin-inline: auto;
 }
 
 /* contact */
 
 .contact .paragraph {
   font-weight: 400;
+  max-width: 70ch;
 }
 .contact .h3-heading {
   position: relative;
