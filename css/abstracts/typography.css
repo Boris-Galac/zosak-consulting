@@ -19,7 +19,7 @@ h2::before {
   content: "";
   position: absolute;
   height: 3px;
-  width: 15%;
+  width: 2.5rem;
   left: -3.2rem;
   transform: translateY(-50%);
   top: 50%;

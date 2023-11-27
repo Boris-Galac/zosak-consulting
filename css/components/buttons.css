@@ -90,3 +90,24 @@ button {
 .contact__form-submit-btn:hover {
   background-color: #2e2e2e;
 }
+.scroll-to-top-btn {
+  transition: 0.2s;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--black);
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  box-shadow: 0 5px 10px var(--black);
+  z-index: 2;
+}
+.scroll-to-top-btn[data-visible="true"] {
+  opacity: 1;
+}
+.scroll-to-top-btn[data-visible="false"] {
+  opacity: 0;
+}
+.scroll-to-top-btn:hover {
+  background-color: #2e2e2e;
+  cursor: pointer;
+}

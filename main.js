@@ -34,6 +34,15 @@ window.addEventListener("scroll", (e) => {
   } else {
     document.querySelector(".nav__logo").setAttribute("data-visible", "false");
   }
+  const backToTopBtn = document.querySelector(".scroll-to-top-btn");
+  if (window.scrollY > 300) {
+    backToTopBtn.setAttribute("data-visible", "true");
+  } else {
+    backToTopBtn.setAttribute("data-visible", "false");
+  }
+  backToTopBtn.addEventListener("click", (e) => {
+    window.scrollTo({ top: 0 });
+  });
 });
 
 // PROJECT COUNTER

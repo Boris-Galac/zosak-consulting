@@ -1,7 +1,6 @@
 .nav {
   position: fixed;
   background-color: var(--black);
-
   left: 0;
   right: 0;
   top: auto;
