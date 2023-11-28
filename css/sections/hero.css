@@ -68,7 +68,7 @@
 .hero__headline-wrapper {
   display: grid;
   place-content: center;
-  height: 100%;
+  height: 106%;
   width: 91%;
   margin-inline: auto;
 }
