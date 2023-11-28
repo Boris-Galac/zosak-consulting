@@ -69,15 +69,13 @@
   display: grid;
   place-content: center;
   height: 100%;
-  width: 71%;
+  width: 91%;
   margin-inline: auto;
 }
-
 .hero__main-heading--first-child {
   display: flex;
   gap: 0.6rem;
 }
-
 .hero__cta-btn {
   position: relative;
   transition: 0.4s;

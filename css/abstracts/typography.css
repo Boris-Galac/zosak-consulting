@@ -56,17 +56,28 @@ h2::before {
 .hero__subheadline {
   color: var(--white);
 }
-.hero__main-heading {
-  font-size: clamp(2rem, 7vw, 5rem);
-  margin-bottom: 0.5rem;
-}
 .yellow-heading {
-  color: hsl(60, 100%, 50%);
+  color: hsl(60, 100%, 78%);
+}
+.hero__main-heading {
+  display: grid;
+  line-height: clamp(200%, 7vw, 570%);
+  margin-bottom: 0.3rem;
+}
+.hero__main-heading > * {
+  font-size: clamp(3rem, 7vw, 7rem);
 }
 .hero__subheadline {
   font-weight: 500;
+  line-height: 150%;
+  max-width: 50ch;
+  margin-bottom: 0.5rem;
 }
-
+@media (min-width: 768px) {
+  .hero__subheadline {
+    font-size: 1.5rem;
+  }
+}
 /* offer */
 
 .offer__first-text {
