@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap");
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -61,23 +62,38 @@ h2::before {
 }
 .hero__main-heading {
   display: grid;
-  line-height: clamp(200%, 7vw, 570%);
+  line-height: clamp(200%, 7vw, 470%);
   margin-bottom: 0.3rem;
 }
 .hero__main-heading > * {
   font-size: clamp(3rem, 7vw, 7rem);
+  font-family: "Saira", sans-serif;
+  font-style: italic;
+  font-weight: 600;
 }
 .hero__subheadline {
   font-weight: 500;
   line-height: 150%;
   max-width: 50ch;
   margin-bottom: 0.5rem;
+  animation: hero-subheadline 5s forwards;
+}
+@keyframes hero-subheadline {
+  from {
+    transform: translateY(-3rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
 }
 @media (min-width: 768px) {
   .hero__subheadline {
     font-size: 1.5rem;
   }
 }
+
 /* offer */
 
 .offer__first-text {

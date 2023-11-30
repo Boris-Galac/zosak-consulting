@@ -29,13 +29,13 @@
   .contact__body-content {
     display: flex;
     margin-right: auto;
-    gap: 20rem;
+    gap: 20vw;
   }
 }
 @media (min-width: 960px) {
   .contact__contact-socials {
     position: relative;
-    width: min(100%, 300px);
+    width: min(100%, 460px);
     padding-inline: 2rem;
     display: grid;
   }

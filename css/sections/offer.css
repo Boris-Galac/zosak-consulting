@@ -1,6 +1,6 @@
 .offer__list {
   display: grid;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 .offer__list li {
   display: flex;
@@ -29,6 +29,10 @@
   }
   .offer__img {
     order: 1;
+  }
+  .offer__list {
+    display: grid;
+    gap: 3rem;
   }
   .offer__text-content h2 {
     display: grid;

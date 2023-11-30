@@ -112,3 +112,31 @@ button {
   background-color: #2e2e2e;
   cursor: pointer;
 }
+.hero__cta-btn {
+  position: relative;
+  transition: 0.4s;
+  background: linear-gradient(130deg, hsl(232, 73%, 43%), hsl(226, 100%, 65%));
+  padding: 0.8rem 3rem;
+  border-radius: 100vmax;
+  width: max-content;
+  box-shadow: 0 0 10px 3px var(--white);
+  margin-block: 2rem;
+  font-weight: 500;
+  isolation: isolate;
+}
+.hero__cta-btn:hover {
+  box-shadow: 0 0 15px 6px var(--white);
+}
+.hero__cta-btn::after {
+  content: "";
+  position: absolute;
+  background-color: hsla(0, 0%, 100%, 0.247);
+  border-radius: 100vmax;
+  inset: 0;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s;
+}
+.hero__cta-btn:hover::after {
+  width: 100%;
+}

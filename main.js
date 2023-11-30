@@ -31,8 +31,10 @@ main.style = `
 window.addEventListener("scroll", (e) => {
   if (window.scrollY > 100) {
     document.querySelector(".nav__logo").setAttribute("data-visible", "true");
+    document.querySelector(".nav").classList.add("nav-active");
   } else {
     document.querySelector(".nav__logo").setAttribute("data-visible", "false");
+    document.querySelector(".nav").classList.remove("nav-active");
   }
   const backToTopBtn = document.querySelector(".scroll-to-top-btn");
   if (window.scrollY > 300) {
@@ -46,22 +48,6 @@ window.addEventListener("scroll", (e) => {
 });
 
 // PROJECT COUNTER
-
-// let valueDisplays = document.querySelectorAll(".count");
-// let interval = 5000;
-
-// valueDisplays.forEach((valueDisplay) => {
-//   let startValue = 0;
-//   let endValue = Number(valueDisplay.getAttribute("data-num"));
-//   let duration = Math.floor(interval / endValue);
-//   let counter = setInterval(() => {
-//     startValue += 1;
-//     valueDisplay.textContent = startValue;
-//     if (startValue == endValue) {
-//       clearInterval(counter);
-//     }
-//   }, duration);
-// });
 
 function startCounterAnimation() {
   let valueDisplays = document.querySelectorAll(".count");
@@ -118,3 +104,23 @@ const hiddenLeft = document.querySelectorAll(".left");
 hiddenLeft.forEach((el) => observerElements.observe(el));
 const oapcity = document.querySelectorAll(".opacity");
 oapcity.forEach((el) => observerElements.observe(el));
+
+// PAGE TRANSITIONS
+
+window.addEventListener("load", (e) => {
+  const transitionElement = document.querySelector(".transition");
+  const allLinksOnPage = document.querySelectorAll(".nav__link--trans");
+  setTimeout(() => {
+    transitionElement.setAttribute("data-active", "false");
+  }, 500);
+  allLinksOnPage.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const target = e.target.href;
+      transitionElement.setAttribute("data-active", "true");
+      setTimeout(() => {
+        window.location.href = target;
+      }, 1000);
+    });
+  });
+});

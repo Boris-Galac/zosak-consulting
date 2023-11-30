@@ -3,16 +3,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zošak Consulting</title>
-    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script defer src="/main.js"></script>
   </head>
   <body>
-    <div class="top-left-cube top-left-cube--header">
-      <img
-        src="/assets/images/logo-zosak-white.svg"
-        alt="zosak logo header"
-        class="header__logo"
-      />
+    <div class="splash-screen transition transition-1" data-active="true"">
+      <img src="/assets/images/logo-zosak-white.svg" aria-hidden="true" />
     </div>
     <header class="header">
       <nav class="nav">
@@ -33,13 +29,13 @@
               <a href="#" class="nav__link">Naslovna</a>
             </li>
             <li class="nav__item">
-              <a href="#offer" class="nav__link">Što nudim</a>
+              <a href="#offer" class="nav__link">Što nudimo</a>
             </li>
             <li class="nav__item">
-              <a href="#benefiti" class="nav__link">Benefiti usluge</a>
+              <a href="#benefiti" class="nav__link">Benefiti naših usluga</a>
             </li>
             <li class="nav__item">
-              <a href="#o-nama" class="nav__link">O meni</a>
+              <a href="#o-nama" class="nav__link">O nama</a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">Kontakt</a>
@@ -51,25 +47,36 @@
     <main class="main">
       <!-- HERO SECTION -->
       <section class="hero">
-        <div class="top-left-cube top-left-cube--body">
-          <img
-            src="/assets/images/logo-zosak-white.svg"
-            alt="zosak logo header"
-            class="header__logo"
-          />
-        </div>
+        <video
+          src="/assets/video-hero.mp4"
+          aria-hidden="true"
+          type="video/mp4"
+          loop
+          muted
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+          autoplay
+          playsinline
+          class="hero__video-overlay"
+        ></video>
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__headline-wrapper">
+              <img
+                src="/assets/images/logo-zosak-white.svg"
+                alt="zosak logo header"
+                class="header__logo"
+              />
               <p class="hero__subheadline yellow-heading">
-                Nudimo model snižavanja troškova čišćenja u području održavanja
-                i higijene zdravstvenih ustanova.
+                Nudimo model snižavanja troškova čišćenja u području poslovnih
+                objekata.
               </p>
               <h1 class="hero__main-heading">
                 <span
                   class="hero__main-heading--first-child left"
                   style="animation-delay: 0.2s"
-                  >Uz nas Vaša</span
+                  >Uz nas, Vaša</span
                 >
                 <span
                   class="hero__main-heading--second-child left"
@@ -82,21 +89,11 @@
                   >neupitna</span
                 >
               </h1>
-              <a role="button" href="#offer" class="hero__cta-btn">Krenimo</a>
+              <a role="button" href="#offer" class="hero__cta-btn">Saznajte više</a>
             </div>
           </div>
         </div>
-        <div class="bottom-right-cube">
-          <div class="socials">
-            <a href="#"><img src="/assets/icons/fb-white-icon.svg" alt="" /></a>
-            <a href="#"
-              ><img src="/assets/icons/instagram-white-icon.svg" alt=""
-            /></a>
-            <a href="#"
-              ><img src="/assets/icons/gmail-white-icon.svg" alt=""
-            /></a>
-          </div>
-        </div>
+        <a href="" role="button"></a>
       </section>
       <!------------------>
       <!-- HERO SECTION -->
@@ -119,7 +116,7 @@
                     />
                     <p class="offer__list-item-paragraph">
                       Usluge savjetovanja u području ostvarenja uštede pri svim
-                      vrstama čišćenja objekata.
+                      vrstama čišćenja poslovnih objekata.
                     </p>
                   </li>
                   <li class="right" style="animation-delay: 0.3s">
@@ -140,23 +137,12 @@
                       aria-hidden="true"
                     />
                     <p class="offer__list-item-paragraph">
-                      Usluge servisa čišćenja za sve vrste gradilišta,
+                      Usluge servisa za sve vrste građevinskih čišćenja,
                       površinske obrade kamena, polirana kamena, kristalizaciju
                       kamena, otklanjanja salitre, čišćenje protukliznih
                       pločica, poliranja stakala kao i čišćenje svih vrsta
                       fasada i fasadnih obloga poput cigle, eleksiranog
                       aluminija i drva.
-                    </p>
-                  </li>
-                  <li class="right" style="animation-delay: 0.9s">
-                    <img
-                      src="/assets/icons/check-bullet-icon.svg"
-                      aria-hidden="true"
-                    />
-                    <p class="offer__list-item-paragraph">
-                      Također, nudimo različite vrste čišćenja, sukladne
-                      međunarodnim standardima, pružajući transparentnost i
-                      usporedivost u načinu, obujmu i intervalu čišćenja.
                     </p>
                   </li>
                 </ul>
@@ -175,20 +161,24 @@
       <section class="benefiti" id="benefiti">
         <div class="container">
           <div class="benefiti__wrapper">
-            <h2 class="h2-heading--white mb-64">Benefiti moje usluge</h2>
+            <h2 class="h2-heading--white mb-64">Benefiti naših usluga</h2>
             <div class="benefiti__inner-wrapper">
               <div
                 class="benefiti__article-col left"
                 style="animation-delay: 0.3s"
               >
-                <img src="/assets/icons/award-icon.svg" aria-hidden="true" />
+                👉
                 <article class="benefiti__article">
                   <h3 class="h3-heading">Ušteda</h3>
                   <p class="paragraph paragraph--white">
                     Uštede ostvarujemo korištenjem efikasnih tehnika čišćenja i
                     organizacijom posla, što značajno smanjuje potrebni broj
-                    spremačica na razinu europskih standarda. Ušteda ide čak do
-                    50% uz povišenje razine čistoće.
+                    spremačica na razinu europskih standarda. Ušteda ide i više
+                    od 50% uz istovremeno povišenje razine čistoće. <br /><br />
+                    Suština postizanja tako velikih ušteda je primjena
+                    industrijskih tehnika čišćenja, optimizacijom načina rada te
+                    nadzorom i pismenim izvještavanjem o postignutoj razini
+                    čistoće.
                   </p>
                 </article>
               </div>
@@ -196,17 +186,18 @@
                 class="benefiti__article-col left"
                 style="animation-delay: 0.6s"
               >
-                <img src="/assets/icons/award-icon.svg" aria-hidden="true" />
+                👉
                 <article class="benefiti__article">
                   <h3 class="h3-heading">Vrhunska kvaliteta</h3>
                   <p class="paragraph paragraph--white">
-                    sve naše usluge izvršavamo sukladno međunarodno priznatim
+                    Sve naše usluge izvršavamo sukladno međunarodno priznatim
                     normama i standardima, pružajući potpunu transparentnost i
                     usporedivost u načinu, obujmu i intervalima čišćenja. To su
                     uskospecijalizirane norme izrađene namjenski samo za branšu
                     čišćenja. U to spada npr. DIN norma za čišćenje škola, DIN
                     norma za čišćenje zdravstvenih ustanova, DIN norma za
-                    mjerenje i ocjenjivanje rezultata čišćenja i sličnih.
+                    mjerenje i ocjenjivanje rezultata čišćenja i ostalih sličnih
+                    normi.
                   </p>
                 </article>
               </div>
@@ -214,15 +205,18 @@
                 class="benefiti__article-col left"
                 style="animation-delay: 0.9s"
               >
-                <img src="/assets/icons/award-icon.svg" aria-hidden="true" />
+                👉
                 <article class="benefiti__article">
                   <h3 class="h3-heading">Suradnja i sigurnost</h3>
                   <p class="paragraph paragraph--white">
                     Suradnjom sa nama ne ulazite u nikakav rizik jer Vam našu
-                    uslugu možemo obračunati uštedom koju smo Vam ostvarili. Ako
-                    od tvrtke ZOŠAK CONSULTING kupite bilo kakva sredstva ili
-                    opremu za čišćenje također ne ulazite u nikakav rizik jer
-                    nam sve što ste od nas kupili možete uvijek vratiti.
+                    uslugu možemo obračunati uštedom koju smo Vam ostvarili.
+                    <br />
+                    <br />
+                    Ako od tvrtke ZOŠAK CONSULTING kupite bilo kakva sredstva
+                    ili opremu za čišćenje također ne ulazite u nikakav rizik
+                    jer nam sve što ste od nas kupili možete uvijek vratiti uz
+                    povrat novca.
                   </p>
                 </article>
               </div>
@@ -247,7 +241,7 @@
                 <span class="count__caption">Uspješnih velikih projekata</span>
               </div>
               <div class="counter-box">
-                <span class="count" data-num="25">0</span>
+                <span class="count" data-num="30">0</span>
                 <span class="count__caption"
                   >Godina iskustva na istom polju</span
                 >
@@ -291,22 +285,19 @@
                   style="animation-delay: 0.6s"
                 >
                   <p class="paragraph">
-                    Naša tvrtka, ZOŠAK CONSULTING d.o.o., sa više od 25 godina
-                    iskustva, stručna je u
+                    ZOŠAK CONSULTING, stručna tvrtka je u
                     <strong
-                      >optimizaciji čišćenja za tvrtke i zdravstvene
-                      ustanove</strong
-                    >
-                    u Švicarskoj, Njemačkoj i Hrvatskoj. <br />
+                      >optimizaciji čišćenja za sve vrste poslovnih objekata i
+                      zdravstvenih ustanova</strong
+                    >.
                     <br />
-                    <strong>Smanjujemo troškove čišćenja za 50%</strong>, bilo
-                    da je riječ o <strong>vlastitoj službi</strong> ili
-                    <strong>outsourcingu</strong>. To postižemo primjenom
-                    učinkovitih tehnika čišćenja i optimizacijom poslovanja,
-                    smanjujući potrebni broj spremačica prema europskim
-                    standardima. <br /><br />
-                    Na primjer, njemačke bolnice slične veličine imaju znatno
-                    manje osoblja za čišćenje zbog bržih i modernijih metoda.
+                    <br />
+                    <strong>Smanjujemo troškove čišćenja za više od 50%</strong
+                    >, bilo da je riječ o
+                    <strong>vlastitoj službi za čišćenje</strong> ili
+                    <strong>outsourcingu</strong>. Na primjer, njemačke bolnice
+                    slične veličine imaju u pravilu 3 puta manje spremačica zbog
+                    učinkovitijih metoda rada.
                   </p>
                 </article>
                 <article
@@ -314,16 +305,18 @@
                   style="animation-delay: 0.9s"
                 >
                   <p class="paragraph">
-                    Osim toga, <strong>nudimo pomoć u optimizacij</strong> i
-                    troškova, uključujući opciju plaćanja dijela uštede,
-                    prilagođavajući se vašem načinu čišćenja. <br /><br />
-                    Ako koristite outsourcing,
-                    <strong>analiziramo i nadziremo uslugu</strong> kako biste
-                    bili sigurni da ispunjava dogovoreno. <br /><br />
-                    Također pružamo <strong>različite metode čišćenja</strong>,
-                    sukladno međunarodnim standardima,
-                    <strong>osiguravajući transparentnost i usporedivost</strong
-                    >.
+                    Osim toga,
+                    <strong>nudimo pomoć u optimizaciji</strong> troškova,
+                    uključujući opciju plaćanja dijela uštede, prilagođavajući
+                    se vašem načinu čišćenja. <br /><br />
+                    Ako koristite outsourcing, spremni smo Vam ako želite
+                    <strong>analizirati i nadzirati pruženu uslugu</strong> kako
+                    biste bili sigurni da je usluga sukladna dogovoru, odnosno
+                    ugovoru. <br /><br />
+                    Sukladno međunarodnim standardima,
+                    <strong>osiguravamo vam transparentnost i mogućnost</strong>
+                    usporedbe cijene i postignute kvalitete sa istim ili sličnim
+                    objektima.
                   </p>
                 </article>
               </div>
@@ -360,7 +353,7 @@
         <div class="banner__wrapper">
           <div class="container">
             <span class="banner__heading"
-              >Smanjujemo troškove čišćenja za 50%</span
+              >Smanjujemo troškove čišćenja za više od 50%</span
             >
           </div>
         </div>
@@ -496,16 +489,18 @@
                   <a class="footer__link" href="#">Naslovna</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__link" href="#">Što nudim</a>
+                  <a class="footer__link" href="#offer">Što nudimo</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__link" href="#">Benefiti usluge</a>
+                  <a class="footer__link" href="#benefiti"
+                    >Benefiti naših usluga</a
+                  >
                 </li>
                 <li class="footer__item">
-                  <a class="footer__link" href="#">O meni</a>
+                  <a class="footer__link" href="#o-nama">O nama</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__link" href="#">Kontakt</a>
+                  <a class="footer__link" href="#contact">Kontakt</a>
                 </li>
               </ul>
             </nav>
