@@ -140,3 +140,17 @@ button {
 .hero__cta-btn:hover::after {
   width: 100%;
 }
+.scroll-down-btn {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  animation: scroll-down-btn 1.5s ease-in-out alternate infinite;
+}
+@keyframes scroll-down-btn {
+  from {
+    margin-top: 1rem;
+  }
+  to {
+    margin-top: 0rem;
+  }
+}
