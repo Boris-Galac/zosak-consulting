@@ -1,6 +1,7 @@
 .offer__list {
   display: grid;
   gap: 1.5rem;
+  margin-bottom: 5rem;
 }
 .offer__list li {
   display: flex;
@@ -22,7 +23,6 @@
 @media (min-width: 960px) {
   .offer__inner-wrapper {
     display: flex;
-    /* gap: 3rem; */
   }
   .offer__text-content {
     order: 2;
@@ -33,6 +33,7 @@
   .offer__list {
     display: grid;
     gap: 3rem;
+    margin-bottom: 0;
   }
   .offer__text-content h2 {
     display: grid;

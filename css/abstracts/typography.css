@@ -95,7 +95,11 @@ h2::before {
 }
 
 /* offer */
-
+/* gap: 3rem; */
+/* gap: 3rem; */
+.offer--heading {
+  margin-bottom: 64px !important;
+}
 .offer__first-text {
   color: var(--h2-heading);
   font-size: 1.1rem;
