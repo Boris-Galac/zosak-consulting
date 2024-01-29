@@ -1,0 +1,37 @@
+.banner {
+  position: relative;
+  height: 70vh;
+  isolation: isolate;
+  overflow: hidden;
+}
+.banner::before,
+.banner::after {
+  content: "";
+  position: absolute;
+}
+.banner::after {
+  inset: 0;
+  background-image: url("/wp-content/themes/zosak-consulting/src/assets/images/usteda-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.banner__wrapper {
+  position: relative;
+  isolation: isolate;
+}
+.banner__heading {
+  color: #fff;
+  font-size: clamp(2.6rem, 7vw, 6rem);
+  font-weight: 600;
+  text-shadow: #000 0 0px 6px;
+}
+.banner__img {
+  position: absolute;
+  inset: 0;
+  top: -20px;
+  width: 100%;
+  height: auto;
+  min-height: 80%;
+}

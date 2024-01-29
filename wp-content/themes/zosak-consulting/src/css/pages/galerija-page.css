@@ -1,0 +1,68 @@
+.galerija-main {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(160deg, hsl(209, 51%, 86%), hsl(209, 100%, 80%));
+}
+.galerija-main:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/wp-content/themes/zosak-consulting/src/assets/images/gallery-overlay.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  opacity: 0.15;
+}
+/* header */
+.header__back-to-home-page {
+  display: flex;
+  align-items: center;
+  padding-inline: 1rem;
+}
+.header--galerija {
+  z-index: 1000;
+  position: fixed;
+  inset: auto 0;
+  height: 5rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 90%,
+    rgba(0, 0, 0, 0.1)
+  );
+  display: flex;
+  justify-content: space-between;
+}
+.header--galerija__logo-link {
+  aspect-ratio: 1;
+  width: 5rem;
+}
+.header--galerija__logo-link > * {
+  pointer-events: none;
+}
+.galerija-section {
+  padding-block: 5rem;
+  padding-top: 16rem;
+}
+.galerija-section__banner {
+  background: linear-gradient(150deg, rgb(0, 0, 0), rgba(60, 85, 127, 0.2));
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 13rem;
+  box-shadow: 0 2rem 2.5rem hsla(0, 0%, 0%, 0.341);
+}
+.galerija-section__banner-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 960px) {
+  .galerija-section {
+    padding-block: 5rem;
+    padding-top: 19rem;
+  }
+  .galerija-section__banner {
+    height: 15rem;
+  }
+}

@@ -1,0 +1,37 @@
+.project-counter {
+  position: relative;
+  isolation: isolate;
+}
+.project-counter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/wp-content/themes/zosak-consulting/src/assets/images/counter-img.jpg")
+    no-repeat center center/cover;
+  z-index: -1;
+  background-attachment: fixed;
+}
+.project-counter__inner-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.counter-box {
+  display: grid;
+  gap: 0.5rem;
+  place-items: center;
+}
+.count {
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 600;
+}
+.count__caption {
+  color: var(--white);
+}
+@media (min-width: 768px) {
+  .project-counter__inner-wrapper {
+    gap: 10vw;
+  }
+}

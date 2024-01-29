@@ -1,0 +1,27 @@
+.benefiti {
+  position: relative;
+  isolation: isolate;
+}
+.benefiti::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/wp-content/themes/zosak-consulting/src/assets/images/benefiti-img.jpg")
+    no-repeat center center/cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.benefiti__inner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+.benefiti__inner-wrapper > * {
+  flex: 1;
+}
+.benefiti__article-col {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+  min-width: 300px;
+}

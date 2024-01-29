@@ -1,0 +1,116 @@
+.nav {
+  position: fixed;
+  transition: 0.5s;
+  background: linear-gradient(to right, black 5%, rgb(33, 33, 33) 50%);
+  right: 1rem;
+  top: 3rem;
+  border-radius: 100vmax;
+  width: 5rem;
+  height: 5rem;
+  padding: 5px;
+  z-index: 11;
+  box-shadow: 0 0 1rem var(--black);
+}
+.nav.nav-active {
+  width: 10rem;
+}
+.nav__list[data-open="true"] {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  animation: list-open 0.5s forwards;
+}
+@keyframes list-open {
+  from {
+    transform: translateX(70%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.nav__list[data-open="false"] {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.506);
+  animation: list-close 0.5s forwards;
+}
+@keyframes list-close {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(70%);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.nav__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  margin-top: 8rem;
+  padding: 3rem;
+}
+.nav__item {
+  text-align: center;
+}
+.nav__link {
+  position: relative;
+  font-size: 1.4rem;
+}
+.nav__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: -10px;
+  height: 3px;
+  background: var(--white);
+  transition: transform 0.3s;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+.nav__link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.nav__logo {
+  width: 50px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 1rem;
+  pointer-events: none;
+}
+.nav__logo[data-visible="false"] {
+  transition: 1s;
+  opacity: 0;
+}
+.nav__logo[data-visible="true"] {
+  transition: 1s;
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .nav__item {
+    text-align: center;
+  }
+  .nav__link {
+    font-size: 2rem;
+  }
+}
+@media (max-height: 600px) {
+  .nav__list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-top: 2rem;
+    padding: 3rem;
+  }
+  .nav__link {
+    font-size: 1.5rem;
+  }
+}

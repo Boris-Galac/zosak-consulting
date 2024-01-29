@@ -1,0 +1,36 @@
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  width: min(100%, 30rem);
+}
+.contact__form-input {
+  display: grid;
+}
+.contact__form-input input {
+  padding: 0.7rem;
+  font: inherit;
+}
+.contact__form-input input:hover {
+  padding: 0.7rem;
+  font: inherit;
+  transition: 0.2s;
+}
+.contact__form-input label {
+  margin-bottom: 0.5rem;
+}
+.contact__form-input textarea {
+  padding: 0.7rem;
+  font: inherit;
+}
+.contact-submit-btn {
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: var(--white);
+  background-color: var(--black);
+  margin-bottom: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.contact-submit-btn:hover {
+  background-color: rgb(48, 48, 48);
+}

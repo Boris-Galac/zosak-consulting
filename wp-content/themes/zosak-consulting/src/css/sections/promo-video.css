@@ -1,0 +1,16 @@
+.promo-video {
+  position: relative;
+  padding-block: 0;
+  height: 100vh;
+}
+.promo-video:hover .promo-video__heading {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.promo-video > iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}

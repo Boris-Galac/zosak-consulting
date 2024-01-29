@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--white);
+}
+h2 {
+  position: relative;
+  font-size: clamp(1.5rem, 7vw, 3rem);
+  font-weight: 600;
+  margin-left: 4rem;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 2.5rem;
+  left: -3.2rem;
+  transform: translateY(-50%);
+  top: 50%;
+  background-color: blueviolet;
+}
+.h2-heading--white {
+  color: var(--white);
+}
+.h2-heading--dark {
+  color: var(--h2-heading);
+}
+@media (min-width: 1024px) {
+  h2 {
+    margin-bottom: 6rem !important;
+  }
+}
+.h3-heading {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+.paragraph {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 300;
+}
+.paragraph--white {
+  color: var(--white);
+}
+/* hero */
+
+.hero__main-heading,
+.hero__subheadline {
+  color: var(--white);
+}
+.yellow-heading {
+  color: hsl(60, 100%, 78%);
+}
+.hero__main-heading {
+  display: grid;
+  line-height: clamp(200%, 7vw, 470%);
+  margin-bottom: 2rem;
+}
+.hero__main-heading > * {
+  font-size: clamp(3rem, 7vw, 7rem);
+  font-family: "Saira", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+}
+.hero__subheadline {
+  background: black;
+  padding: 8px;
+  font-style: italic;
+
+  font-weight: 500;
+  line-height: 150%;
+  max-width: 50ch;
+  margin-bottom: 0.5rem;
+  animation: hero-subheadline 5s forwards;
+}
+@keyframes hero-subheadline {
+  from {
+    transform: translateY(-3rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .hero__subheadline {
+    font-size: 1.5rem;
+  }
+}
+
+/* offer */
+.offer--heading {
+  margin-bottom: 64px !important;
+}
+.offer__first-text {
+  color: var(--h2-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.offer__list-item-paragraph {
+  color: var(--offer-list-item-paragraph);
+  font-weight: 400;
+}
+
+/* about */
+
+.about .paragraph {
+  font-weight: 400;
+  line-height: 180%;
+}
+.h2-heading--about {
+  margin-bottom: 11rem !important;
+}
+.about__article-wrapper {
+  display: grid;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+/* contact */
+
+.contact .paragraph {
+  font-weight: 400;
+  max-width: 70ch;
+}
+.contact .h3-heading {
+  position: relative;
+  font-size: 2rem;
+}
+.contact .h3-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: var(--white);
+  bottom: -0.5rem;
+  height: 2px;
+  width: 1.5rem;
+}
+
+/* galerija */
+.galerija-section__heading {
+  color: var(--white);
+  position: absolute;
+  z-index: 5;
+  bottom: 2rem;
+  left: 2rem;
+  font-size: clamp(2.5rem, 7vw, 4rem);
+}
