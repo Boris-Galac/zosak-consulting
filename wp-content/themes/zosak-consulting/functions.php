@@ -51,11 +51,11 @@ function widget_areas_function(){
         array(
             'before_title'=>'',
             'after_title'=>'',
-            'before_widget'=>'<ul>',
-            'after_widget'=>'</ul>',
-            'name'=>'lang',
-            'id'=> 'sidebar-2',
-            'description'=> 'Sidebar Widget Area'
+            'before_widget'=>'',
+            'after_widget'=>'',
+            'name'=>'Contact Form 7',
+            'id'=> 'cf-7',
+            'description'=> 'Contact Form 7'
         )
     );
 }

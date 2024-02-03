@@ -1,9 +1,12 @@
+.contact {
+  padding-bottom: 10rem;
+}
 .contact__contact-socials {
   background-color: #d1efff;
   padding-bottom: 1.5rem;
 }
 .contact__form {
-  width: min(100%, 500px);
+  width: min(100%, 800px);
 }
 .contact__info {
   background-color: var(--h2-heading);
@@ -29,13 +32,10 @@
   .contact__body-content {
     display: flex;
     margin-right: auto;
-    gap: 20vw;
+    justify-content: space-between;
   }
 }
 @media (min-width: 960px) {
-  .contact__body-content {
-    height: 36%;
-  }
   .contact__contact-socials {
     position: relative;
     width: min(100%, 460px);
