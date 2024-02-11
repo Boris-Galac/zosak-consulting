@@ -157,3 +157,22 @@ h2::before {
   left: 2rem;
   font-size: clamp(2.5rem, 7vw, 4rem);
 }
+/* print */
+.print-heading {
+  font-size: 1.5rem;
+  color: #fff;
+  left: 8px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+@media (min-width: 1100px) {
+  .print-heading {
+    font-size: 2.5rem;
+    color: #fff;
+    left: 448px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+}

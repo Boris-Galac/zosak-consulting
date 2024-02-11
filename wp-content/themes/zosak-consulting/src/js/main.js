@@ -1,7 +1,10 @@
 ////// 💡💡💡 HOME PAGE
-if (!window.location.href.includes("galerija")) {
+if (
+  !window.location.href.includes("galerija") &&
+  !window.location.href.includes("privatnost") &&
+  !window.location.href.includes("uvjeti")
+) {
   // PROJECT COUNTER
-
   function startCounterAnimation() {
     let valueDisplays = document.querySelectorAll(".count");
     let interval = 5000;
@@ -132,6 +135,15 @@ if (!window.location.href.includes("galerija")) {
     }
     overlayImage(msg);
   }
+  // print PDF file
+  document.querySelectorAll(".print-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      window.open(
+        "/wp-content/themes/zosak-consulting/src/assets/prospekt-zosak.pdf",
+        "_blank"
+      );
+    });
+  });
 }
 ////////// end of index page ////////////
 

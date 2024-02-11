@@ -25,11 +25,32 @@
                             style="animation-delay: 0.8s">neupitna</span>
                     </h1>
                     <div class="hero__btn-wrapper">
-                        <a role="button" href="galerija.html" class="hero__cta-btn">Galerija radova</a>
+                        <a role="button" href="<?php echo site_url('galerija') ?>" class="hero__cta-btn">Galerija
+                            radova</a>
                         <a role="button" href="#promo-video" class="hero__cta-btn hero__online-ciscenje">Online čišćenje
                             <img src="/wp-content/themes/zosak-consulting/src/assets/icons/play-icon.svg"
-                                aria-hidden="true"></a>
-                        <img src="" alt="">
+                                aria-hidden="true">
+                        </a>
+                        <button class="print-btn print-btn--mobile">Isprintajte prospekte<img
+                                src="/wp-content/themes/zosak-consulting/src/assets/icons/print-icon.svg"
+                                aria-hidden="true">
+                        </button>
+                    </div>
+                </div>
+                <div class="prospects" aria-label="printaj prospekte">
+                    <button class="print-btn print-btn--desktop">Isprintajte prospekte
+                    </button>
+                    <div class="prospect-imgs">
+                        <img aria-hidden="true"
+                            src="/wp-content/themes/zosak-consulting/src/assets/images/thumb-print/thumb-1.jpg">
+                        <img aria-hidden="true"
+                            src="/wp-content/themes/zosak-consulting/src/assets/images/thumb-print/thumb-2.jpg">
+                        <img aria-hidden="true"
+                            src="/wp-content/themes/zosak-consulting/src/assets/images/thumb-print/thumb-3.jpg">
+                        <img aria-hidden="true"
+                            src="/wp-content/themes/zosak-consulting/src/assets/images/thumb-print/thumb-4.jpg">
+                        <img aria-hidden="true" class="cover-img-print"
+                            src="/wp-content/themes/zosak-consulting/src/assets/images/thumb-print/thumb-0.jpg">
                     </div>
                 </div>
             </div>

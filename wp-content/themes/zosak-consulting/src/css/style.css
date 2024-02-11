@@ -8,6 +8,7 @@
 @import "utilities/animations.css";
 /* pages */
 @import "pages/galerija-page.css";
+@import "pages/privatnost-page.css";
 /* sections */
 @import "sections/hero.css";
 @import "sections/offer.css";

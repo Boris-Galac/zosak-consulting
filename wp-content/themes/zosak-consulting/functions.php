@@ -2,8 +2,14 @@
 
 
 function mytheme_load_scripts() {
+    // Enqueue stylesheets
     wp_enqueue_style('theme-style', get_theme_file_uri('/src/css/style.css'));
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css', array(), '6.5.1');
+
+    // Enqueue PDF.js library
+    wp_enqueue_script('pdf-js', 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js');
+
+    // Enqueue custom JavaScript
     wp_enqueue_script('custom-script', get_theme_file_uri('/src/js/main.js'), array(), false, true);
 }
 

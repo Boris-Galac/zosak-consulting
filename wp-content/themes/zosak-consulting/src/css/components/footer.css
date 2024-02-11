@@ -42,12 +42,16 @@
   background-color: var(--black);
   padding: 1.5rem;
   display: grid;
+  gap: 0.5rem;
   place-items: center;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1;
+}
+.copyright-separator {
+  color: #fff;
 }
 .copyright__paragraph {
   color: var(--white);
@@ -67,6 +71,16 @@
 }
 .footer__inner-wrapper:nth-child(2) {
   display: grid;
+}
+.copyright-terms {
+  display: flex;
+  gap: 0.5rem;
+}
+.copyright-terms a {
+  transition: 0.2s;
+}
+.copyright-terms a:hover {
+  opacity: 0.5;
 }
 @media (min-width: 768px) {
   .footer__list {

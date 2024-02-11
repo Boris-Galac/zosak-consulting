@@ -172,3 +172,27 @@ button {
     margin-top: 0rem;
   }
 }
+.print-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid var(--white);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 100vmax;
+  color: var(--white);
+  width: max-content;
+  height: max-content;
+  bottom: 0;
+  padding: 0.6rem 1rem;
+  font: inherit;
+}
+.cover-img-print {
+  z-index: 5000000000000;
+}
+.print-btn-desktop {
+  display: none;
+}

@@ -1,0 +1,21 @@
+.privatnost-main {
+  padding-block: 30vh;
+}
+.privatnost-wrapper {
+  display: grid;
+  gap: 2.5rem;
+}
+.privatnost-row {
+  margin-inline: auto;
+  max-width: 50rem;
+}
+.privatnost-row:nth-child(1) .privatnost-heading {
+  font-size: 2rem;
+}
+
+.privatnost-heading {
+  margin-bottom: 1rem;
+}
+.privatnost-main p {
+  line-height: 160%;
+}

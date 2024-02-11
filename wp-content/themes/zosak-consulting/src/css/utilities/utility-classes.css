@@ -2,6 +2,9 @@
   width: min(100% - 32px, 1300px);
   margin-inline: auto;
 }
+.cmplz-cookiebanner {
+  z-index: 1 !important;
+}
 .splash-screen {
   position: fixed;
   inset: 0;

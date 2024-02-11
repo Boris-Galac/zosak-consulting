@@ -54,6 +54,11 @@
              Copyright © 2023 - All Rights Reserved. Website kreirao i uredio:
              GALAC-DESIGN
          </p>
+         <div class="copyright-terms">
+             <a href="<?php echo site_url('privatnost') ?>">Politika privatnosti</a>
+             <span class="copyright-separator">|</span>
+             <a href="<?php echo site_url('uvjeti') ?>">Uvjeti korištenja</a>
+         </div>
      </div>
      <?php wp_footer() ?>
  </footer>
