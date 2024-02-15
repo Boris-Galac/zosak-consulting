@@ -50,6 +50,11 @@
                     </li>
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">Kontakt</a>
+                    </li>
+                    <button class="print-btn print-btn--mobile">Isprintajte prospekte<img
+                            src="/wp-content/themes/zosak-consulting/src/assets/icons/print-icon.svg"
+                            aria-hidden="true">
+                    </button>
                 </div>
             </ul>
     </header>

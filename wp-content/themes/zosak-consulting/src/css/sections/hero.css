@@ -189,11 +189,13 @@ header {
   .prospects {
     position: absolute;
     right: 2rem;
-    bottom: 2rem;
+    bottom: 9rem;
     display: grid;
     z-index: 10000000000;
     height: 350px;
     width: max-content;
+    transition: 0.3s;
+    cursor: pointer;
   }
   .print-btn--mobile {
     display: none !important;
@@ -206,6 +208,27 @@ header {
     width: 200px;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -40px;
+    transition: 0.3s;
+  }
+  .prospect-imgs img {
+    transition: 0.3s;
+  }
+  .prospect-imgs img:nth-child(2) {
+    transition: 0.3s;
+    rotate: -20deg;
+    transform-origin: bottom;
+  }
+  .prospect-imgs img:nth-child(3) {
+    transition: 0.3s;
+    rotate: -10deg;
+    scale: 1.1;
+    transform-origin: bottom;
+  }
+  .prospect-imgs img:nth-child(4) {
+    transition: 0.3s;
+    rotate: -30deg;
+    scale: 0.9;
+    transform-origin: bottom;
   }
 }

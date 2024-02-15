@@ -40,6 +40,7 @@
   background-color: rgb(179, 96, 51);
   color: #fff;
 }
+
 @media (max-height: 488px) {
   .header__logo {
     left: -2.5rem !important;

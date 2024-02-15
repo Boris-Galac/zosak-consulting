@@ -27,14 +27,11 @@
                     <div class="hero__btn-wrapper">
                         <a role="button" href="<?php echo site_url('galerija') ?>" class="hero__cta-btn">Galerija
                             radova</a>
-                        <a role="button" href="#promo-video" class="hero__cta-btn hero__online-ciscenje">Online čišćenje
+                        <a role="button" href="#promo-video" class="hero__cta-btn hero__online-ciscenje">
+                            Promo VIDEO
                             <img src="/wp-content/themes/zosak-consulting/src/assets/icons/play-icon.svg"
                                 aria-hidden="true">
                         </a>
-                        <button class="print-btn print-btn--mobile">Isprintajte prospekte<img
-                                src="/wp-content/themes/zosak-consulting/src/assets/icons/print-icon.svg"
-                                aria-hidden="true">
-                        </button>
                     </div>
                 </div>
                 <div class="prospects" aria-label="printaj prospekte">
@@ -201,7 +198,7 @@
                         <span class="count__caption">Uspješnih velikih projekata</span>
                     </div>
                     <div class="counter-box">
-                        <span class="count" data-num="30">0</span>
+                        <span class="count" data-num="28">0</span>
                         <span class="count__caption">Godina iskustva na istom polju</span>
                     </div>
                 </div>
@@ -226,7 +223,7 @@
                                 tvrtke ZOŠAK CONSULTING. <br />
                                 <br />
                                 Iza Ing. Darka Zošaka stoji više od
-                                <strong>30 godina internacionalnog iskustva</strong> zapadne
+                                <strong>28 godina internacionalnog iskustva</strong> zapadne
                                 europe u području snižavanja troškova čišćenja svih vrsta
                                 objekata uključujući najzahtjevnije zdravstvene ustanove u
                                 Švicarskoj, Njemačkoj i Hrvatskoj.

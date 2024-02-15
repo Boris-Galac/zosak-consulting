@@ -193,6 +193,14 @@ button {
 .cover-img-print {
   z-index: 5000000000000;
 }
-.print-btn-desktop {
-  display: none;
+.print-btn--mobile {
+  margin-inline: auto;
+}
+/* cookies */
+.cmplz-cookiebanner {
+  background-color: #000 !important;
+}
+.cmplz-cookiebanner .cmplz-message,
+.cmplz-cookiebanner .cmplz-title {
+  color: #fff !important;
 }

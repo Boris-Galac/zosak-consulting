@@ -136,7 +136,7 @@ if (
     overlayImage(msg);
   }
   // print PDF file
-  document.querySelectorAll(".print-btn").forEach((btn) => {
+  document.querySelectorAll(".prospects").forEach((btn) => {
     btn.addEventListener("click", (e) => {
       window.open(
         "/wp-content/themes/zosak-consulting/src/assets/prospekt-zosak.pdf",

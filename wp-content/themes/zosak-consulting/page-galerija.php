@@ -584,12 +584,6 @@
                             src="/wp-content/themes/zosak-consulting/src/assets/images/teren-slike/img (96).jpg"
                             alt="image of works portfolio">
                     </a>
-                    <a href="/wp-content/themes/zosak-consulting/src/assets/images/teren-slike/img (97).jpg"
-                        class="gallery__img">
-                        <img decoding="async" fetchpriority="high" loading="lazy"
-                            src="/wp-content/themes/zosak-consulting/src/assets/images/teren-slike/img (97).jpg"
-                            alt="image of works portfolio">
-                    </a>
                     <a href="/wp-content/themes/zosak-consulting/src/assets/images/teren-slike/img (98).jpg"
                         class="gallery__img">
                         <img decoding="async" fetchpriority="high" loading="lazy"
@@ -648,12 +642,6 @@
                         class="gallery__img">
                         <img decoding="async" fetchpriority="high" loading="lazy"
                             src="/wp-content/themes/zosak-consulting/src/assets/images/teren-slike/img (107).jpg"
-                            alt="image of works portfolio">
-                    </a>
-                    <a href="/wp-content/themes/zosak-consulting/src/assets/images/teren-slike/img (108).jpg"
-                        class="gallery__img">
-                        <img decoding="async" fetchpriority="high" loading="lazy"
-                            src="/wp-content/themes/zosak-consulting/src/assets/images/teren-slike/img (108).jpg"
                             alt="image of works portfolio">
                     </a>
                     <a href="/wp-content/themes/zosak-consulting/src/assets/images/teren-slike/img (109).jpg"

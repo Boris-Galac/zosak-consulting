@@ -35,25 +35,38 @@
                      </ul>
                  </nav>
              </div>
-             <div class="footer__inner-wrapper">
-                 <div class="footer__separator"></div>
-                 <div class="footer__socials">
-                     <a href="#"><img src="/wp-content/themes/zosak-consulting/src/assets/icons/gmail-white-icon.svg"
-                             aria-hidden="true" /></a>
-                     <a href="#"><img
-                             src="/wp-content/themes/zosak-consulting/src/assets/icons/instagram-white-icon.svg"
-                             aria-hidden="true" /></a>
-                     <a href="#"><img src="/wp-content/themes/zosak-consulting/src/assets/icons/fb-white-icon.svg"
-                             aria-hidden="true" /></a>
+             <div class="footer__info-and-socials-wrapper">
+                 <div class="footer__info-obrt">
+                     <div class="info-obrt__oib"><img
+                             src="/wp-content/themes/zosak-consulting/src/assets/icons/person-icon.svg"
+                             alt="oib number by kim zosak"><span>Kim Zošak </span></div>
+                     <div class="info-obrt__oib"><img
+                             src="/wp-content/themes/zosak-consulting/src/assets/icons/oib-icon.svg"
+                             alt="oib number by kim zosak"><span>OIB: 88703572310 </span></div>
+                     <div class="info-obrt"><img
+                             src="/wp-content/themes/zosak-consulting/src/assets/icons/building-icon.svg"
+                             alt="oib number by kim zosak"> <span>Draganići 14, 10000 Zagreb</span></div>
+                 </div>
+                 <div class="footer__inner-wrapper">
+                     <div class="footer__socials">
+                         <a href="#"><img
+                                 src="/wp-content/themes/zosak-consulting/src/assets/icons/gmail-white-icon.svg"
+                                 aria-hidden="true" /></a>
+                         <a href="#"><img
+                                 src="/wp-content/themes/zosak-consulting/src/assets/icons/instagram-white-icon.svg"
+                                 aria-hidden="true" /></a>
+                         <a href="#"><img src="/wp-content/themes/zosak-consulting/src/assets/icons/fb-white-icon.svg"
+                                 aria-hidden="true" /></a>
+                     </div>
                  </div>
              </div>
          </div>
      </div>
      <div class="copyright">
-         <p class="copyright__paragraph">
-             Copyright © 2023 - All Rights Reserved. Website kreirao i uredio:
-             GALAC-DESIGN
-         </p>
+         <div class="copyright__paragraph">
+             <p>Copyright © 2023 - All Rights Reserved.</p>
+             <p>Website kreirao i uredio: GALAC-DESIGN</p>
+         </div>
          <div class="copyright-terms">
              <a href="<?php echo site_url('privatnost') ?>">Politika privatnosti</a>
              <span class="copyright-separator">|</span>
