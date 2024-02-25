@@ -36,16 +36,37 @@
                  </nav>
              </div>
              <div class="footer__info-and-socials-wrapper">
-                 <div class="footer__info-obrt">
-                     <div class="info-obrt__oib"><img
-                             src="/wp-content/themes/zosak-consulting/src/assets/icons/person-icon.svg"
-                             alt="oib number by kim zosak"><span>Kim Zošak </span></div>
-                     <div class="info-obrt__oib"><img
-                             src="/wp-content/themes/zosak-consulting/src/assets/icons/oib-icon.svg"
-                             alt="oib number by kim zosak"><span>OIB: 88703572310 </span></div>
-                     <div class="info-obrt"><img
-                             src="/wp-content/themes/zosak-consulting/src/assets/icons/building-icon.svg"
-                             alt="oib number by kim zosak"> <span>Draganići 14, 10000 Zagreb</span></div>
+                 <div class="info-obrt-firma">
+                     <img src="/wp-content/themes/zosak-consulting/src/assets/images/logo-zosak-white.svg" alt="logo">
+                     <h3>Zošak Consulting j.d.o.o.</h3>
+                 </div>
+                 <div class="info-obrt__inner-wrapper">
+                     <div class="footer__info-obrt info-row">
+                         <div class="info-obrt__oib">
+                             <img src="/wp-content/themes/zosak-consulting/src/assets/icons/person-icon.svg"
+                                 alt="director"><span><strong>Kim Zošak</strong>, direktor</span>
+                         </div>
+                         <div class="info-obrt__oib"><img
+                                 src="/wp-content/themes/zosak-consulting/src/assets/icons/oib-icon.svg"
+                                 alt="oib number by kim zosak"><span>OIB: 88703572310 </span>
+                         </div>
+                         <div class="info-obrt"><img
+                                 src="/wp-content/themes/zosak-consulting/src/assets/icons/building-icon.svg"
+                                 alt="address"> <span>Draganići 14, 10000 Zagreb</span>
+                         </div>
+                     </div>
+                     <div class="footer__info-obrt info-row">
+                         <div class="info-obrt"><img
+                                 src="/wp-content/themes/zosak-consulting/src/assets/icons/mail-icon.svg"
+                                 alt="mail contacts"> <span>kim@zosak.hr</span>
+                             <span>zosak@zosak.hr</span>
+                         </div>
+                         <div class="info-obrt"><img
+                                 src="/wp-content/themes/zosak-consulting/src/assets/icons/phone-icon.svg"
+                                 alt="phone numbersk"> <span>091 90 70000</span>
+                             <span>091 247 20 20</span>
+                         </div>
+                     </div>
                  </div>
                  <div class="footer__inner-wrapper">
                      <div class="footer__socials">
@@ -64,7 +85,7 @@
      </div>
      <div class="copyright">
          <div class="copyright__paragraph">
-             <p>Copyright © 2023 - All Rights Reserved.</p>
+             <p>Copyright © 2024 - All Rights Reserved.</p>
              <p>Website kreirao i uredio: GALAC-DESIGN</p>
          </div>
          <div class="copyright-terms">

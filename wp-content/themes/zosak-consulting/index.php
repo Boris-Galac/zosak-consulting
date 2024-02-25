@@ -295,7 +295,7 @@
                     Kontaktirajte nas za suradnju
                 </h2>
                 <div class="contact__inner-wrapper">
-                    <p class="paragraph mb-64">
+                    <p class="paragraph mb-16">
                         Slobodno se javite za bilo kakav vid suradnje u ovoj oblasti.
                         Javit ćemo Vam se u što kraćem mogućem roku. Hvala!
                     </p>

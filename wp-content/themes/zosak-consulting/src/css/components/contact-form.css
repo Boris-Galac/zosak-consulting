@@ -1,112 +1,56 @@
-.contact-form {
-  display: grid;
-  margin-inline: auto;
-  /* width: min(80%, 30rem); */
+.consult__wrapper {
+  width: min(100%, 25rem);
+  padding: 2rem;
+  padding-inline: 1.5rem;
+  border: 1px solid rgb(158, 158, 158);
+  border-radius: 0.5rem;
   margin-bottom: 4rem;
+  background-color: hsl(205, 22%, 92%);
+  position: relative;
+  top: 28px;
 }
-.contact-form * {
-  width: 100%;
-}
-.contact-form p {
-  margin-bottom: 1rem;
-}
-.contact__form-input {
+.consult-email {
   display: grid;
+  gap: 1rem;
 }
-.contact__form-input input {
-  margin-top: 0.5rem;
-  padding: 0.7rem;
-  font: inherit;
-  transition: 0.3s;
+.consult__wrapper p {
+  margin-bottom: 1.5rem;
 }
-.contact__form-input input:focus,
-.contact__form-input textarea:focus {
-  background-color: rgb(221, 228, 235);
-  outline: 0;
-  border: 2px solid rgb(164, 136, 107);
-}
-.contact__form-input input:hover {
-  padding: 0.7rem;
-  font: inherit;
+.consult-mail__input {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 2px solid rgb(55, 55, 68);
   transition: 0.2s;
 }
-.contact__form-input input::placeholder,
-.contact__form-input textarea::placeholder {
-  color: rgba(0, 0, 0, 0.462);
+.consult-mail__input input:focus {
+  border: 2px solid rgb(67, 67, 187);
 }
-.contact__form-input label {
-  font-size: 1.2rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+.consult-mail__input::placeholder {
+  font: inherit;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
 }
-.contact__form-input textarea {
-  margin-top: 0.5rem;
+.consult-mail__submit-btn {
+  background: linear-gradient(to right, black, blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 6px;
   padding: 0.7rem;
   font: inherit;
-  transition: 0.3s;
-}
-.contact-form input[type="submit"] {
-  width: 100%;
-  padding: 16px;
-  background: linear-gradient(
-    90deg,
-    hsl(240, 2%, 8%) 0%,
-    hsl(215, 22%, 24%) 100%
-  );
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--white);
-  transition: 0.3s;
   cursor: pointer;
-  border: 0;
+  transition: 0.2s;
 }
-.contact-form input[type="submit"]:hover {
-  opacity: 0.8;
+.consult-mail__submit-btn:hover {
+  background: linear-gradient(to right, rgb(34, 39, 50), rgb(70, 70, 179));
 }
-/* feedback msg */
-.wpcf7 form.sent .wpcf7-response-output {
-  background: #4cb34c;
-  color: #fff;
-  padding: 1rem;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  outline: 5rem solid hsla(0, 0%, 0%, 0.3);
-  border-radius: 1rem;
-  animation: response-msg 4s forwards;
-  z-index: 5000000000;
+.consult-mail__submit-btn img {
+  width: 20px;
 }
-@keyframes response-msg {
-  0% {
-    display: grid;
-    opacity: 0;
+@media (min-width: 1300px) {
+  .contact__wrapper {
+    width: 100%;
   }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    display: none;
-  }
-}
-.wpcf7-spinner {
-  visibility: hidden;
-  display: inline-block;
-  background-color: #23282d;
-  opacity: 0.75;
-  width: 24px;
-  border: none;
-  border-radius: 100%;
-  padding: 0;
-  margin: 0 24px;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  aspect-ratio: 1;
-  width: 24px !important;
 }

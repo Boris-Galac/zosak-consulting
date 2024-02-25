@@ -4,6 +4,32 @@ if (
   !window.location.href.includes("privatnost") &&
   !window.location.href.includes("uvjeti")
 ) {
+  // KONTAKT
+  document.getElementById("emailForm").addEventListener("submit", (e) => {
+    e.preventDefault(); // Spriječava slanje obrasca
+
+    // Dohvati uneseni e-mail korisnika
+    const userEmail = document.getElementById("userEmail").value;
+
+    // Provjeri ispravnost e-mail adrese
+    if (!isValidEmail(userEmail)) {
+      alert("Molimo unesite ispravnu e-mail adresu.");
+      return;
+    }
+
+    // Pošalji e-mail na određenu adresu
+    const emailBody = `Korisnikov e-mail: ${userEmail}`;
+    const mailtoLink = `mailto:zosak@zosak.hr?subject=Upit za ponudu&body=${encodeURIComponent(
+      emailBody
+    )}`;
+    window.location.href = mailtoLink;
+  });
+
+  // Funkcija za provjeru ispravnosti e-mail adrese
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
   // PROJECT COUNTER
   function startCounterAnimation() {
     let valueDisplays = document.querySelectorAll(".count");

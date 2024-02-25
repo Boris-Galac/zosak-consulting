@@ -45,9 +45,9 @@
   .contact__info {
     position: absolute;
     width: max-content;
-    left: -69px;
+    left: -59%;
     transform: translateY(-50%);
-    top: 45%;
+    top: 66%;
   }
   .contact__socials {
     align-self: flex-end;
